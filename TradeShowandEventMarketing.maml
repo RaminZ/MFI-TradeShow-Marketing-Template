@@ -1,1871 +1,1758 @@
 <Program Name="Event Marketing Template" Version="1.0" DbId="0" CheckOutId="0" State="Start" Permissions="">
-  <Campaign Name="Pre show" Version="1.0" Id="1" DbId="0" CheckOutId="0" State="Start" Permissions="">
-    <CampaignElements>
-      <CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email #1" Position="340,170" SharedCheckout="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>Your name here</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Subject line here</Subject>
-              <HtmlContent>&lt;table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"&gt;&lt;tr&gt;
-    &lt;td&gt;
-        &lt;table width="600" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"&gt;&lt;tr bgcolor="#333333"&gt;
-            &lt;td&gt;
-				&lt;table cellpadding="0"&gt;
-					&lt;tr&gt;
-						&lt;td style="padding:15px;"&gt;
-						  &lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt;##email_preview_text##
-						  &lt;/font&gt;
-						&lt;/td&gt;
-                        &lt;td style="padding:15px;"&gt;
-							&lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt;Email not &lt;/font&gt;&lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt; displaying correctly?
-&lt;a style="color:#9c9c9c" href="##email_in_browser_link##"&gt;View it in your browser&lt;/a&gt;
-															&lt;/font&gt;
-						&lt;/td&gt;
-				  &lt;/tr&gt;
-				&lt;/table&gt;
-			&lt;/td&gt;
-        &lt;/tr&gt;
-		&lt;tr bgcolor="#FF7100" height="5px" style="height:5px;background-color:#FF7100;"&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;
-				&lt;table align="left" cellpadding="0" cellspacing="0" width="100%"&gt; 
-					&lt;tr&gt;
-						&lt;td style="padding:2px;"&gt;&lt;a href="##company_link##"&gt;&lt;image src="##company_logo_link##" /&gt;&lt;/a&gt;&lt;/td&gt;
-					  &lt;td align="right" width="210px" style="width:210px;padding:2px;"&gt;
-							&lt;font face="##email_font_face##" size="3"&gt;##event_name##&lt;/font&gt;&lt;br&gt;
-							&lt;font face="##email_font_face##" size="2" color="#666666"&gt;##event_date##&lt;/font&gt;
-					  &lt;/td&gt;
-					&lt;/tr&gt;
-					&lt;tr bgcolor="#f0f0f0"&gt;
-						&lt;td colspan="2" style="padding:15px;"&gt;
-							&lt;font face="##email_font_face##" size="3"&gt;##email_header##&lt;/font&gt;
-						&lt;/td&gt;
-				  &lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td colspan="2" style="height:10px"&gt;&lt;/td&gt;
-					&lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td colspan="2" style="padding:15px;font-family:##email_font_face##;font-size:13px;"&gt;
-							##email_content##
-							&lt;br&gt;
-						&lt;/td&gt;
-					&lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td colspan="2" bgcolor="#f0f0f0" style="padding:15px;"&gt;
-							&lt;table width="100%"&gt;
+	<Campaign Name="Pre show" Version="1.0" Id="1" DbId="0" CheckOutId="0" State="Start" Permissions="">
+		<CampaignElements>
+			<CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email #1" Position="340,170" SharedCheckout="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>Your name here</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Subject line here</Subject>
+							<HtmlContent>&lt;table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"&gt;&lt;tr&gt;
+								&lt;td&gt;
+								&lt;table width="600" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"&gt;&lt;tr bgcolor="#333333"&gt;
+								&lt;td&gt;
+								&lt;table cellpadding="0"&gt;
 								&lt;tr&gt;
-									&lt;td&gt;
-										&lt;font face="##email_font_face##" size="2"&gt;
-										&lt;a href="##purl_link##"&gt;&lt;font face="##email_font_face##" size="2" color="#277AB9"&gt;Join us at ##event_name##&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
-										##event_date## | ##event_location##&lt;br&gt;  
-										##event_booth##&lt;br&gt;
-									  &lt;/font&gt;
-								  &lt;/td&gt;
-									&lt;td align="right"&gt;&lt;a href="##company_facebook_link##"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/facebook.png" /&gt;&lt;/a&gt;&lt;a href="##company_linkedin_link"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/linkedin.png" /&gt;&lt;/a&gt;&lt;a href="##company_twitter_link##"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/twitter.png" /&gt;&lt;/a&gt;&lt;/td&gt;
+								&lt;td style="padding:15px;"&gt;
+								&lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt;##email_preview_text##
+								&lt;/font&gt;
+								&lt;/td&gt;
+								&lt;td style="padding:15px;"&gt;
+								&lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt;Email not &lt;/font&gt;&lt;font face="##email_font_face##" size="2" color="#9c9c9c"&gt; displaying correctly?
+								&lt;a style="color:#9c9c9c" href="##email_in_browser_link##"&gt;View it in your browser&lt;/a&gt;
+								&lt;/font&gt;
+								&lt;/td&gt;
 								&lt;/tr&gt;
-							&lt;/table&gt;
-						&lt;/td&gt;
-					&lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td colspan="3" style="padding:15px;"&gt;
-							&lt;table width="100%"&gt;
+								&lt;/table&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;tr bgcolor="#FF7100" height="5px" style="height:5px;background-color:#FF7100;"&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
 								&lt;tr&gt;
-									&lt;td&gt;
-										&lt;font face="##email_font_face##" size="2" color="#666666"&gt;
-											##company_copyright##&lt;br&gt;
-											&lt;font color="#999999"&gt;##company_address##&lt;/font&gt;
-									  &lt;/font&gt;
-								  &lt;/td&gt;
-									&lt;td colspan="2" align="right" valign="top" width="110px"&gt;
-										&lt;font face="##email_font_face##" size="2" color="#ff6600"&gt;
-											( &lt;a href="##email_unsubscribe_link##"&gt;&lt;font face="##email_font_face##" size="2" color="#277AB9"&gt;Unsubscribe&lt;/font&gt;&lt;/a&gt; )
-
-
-										&lt;/font&gt;
-									&lt;/td&gt;
+								&lt;td&gt;
+								&lt;table align="left" cellpadding="0" cellspacing="0" width="100%"&gt;
+								&lt;tr&gt;
+								&lt;td style="padding:2px;"&gt;&lt;a href="##company_link##"&gt;&lt;image src="##company_logo_link##" /&gt;&lt;/a&gt;&lt;/td&gt;
+								&lt;td align="right" width="210px" style="width:210px;padding:2px;"&gt;
+								&lt;font face="##email_font_face##" size="3"&gt;##event_name##&lt;/font&gt;&lt;br&gt;
+								&lt;font face="##email_font_face##" size="2" color="#666666"&gt;##event_date##&lt;/font&gt;
+								&lt;/td&gt;
 								&lt;/tr&gt;
-							&lt;/table&gt;
-						&lt;/td&gt;
-					&lt;/tr&gt;
-				&lt;/table&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/table&gt;
-    &lt;/td&gt;
-   &lt;/tr&gt;
-&lt;/table&gt;
-</HtmlContent>
-              <TextContent>Add the text only version of your email here.
-
-
-
-
-Make sure you include your mailing address, and unsubscribe link at the bottom of the email:
-
-##company_copyright##
-##company_address##
-To usubscribe, click here: ##email_unsubscrible_link##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="420,40" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Visit" />
-      </CampaignElement>
-      <CampaignElement Id="3" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="DirectMail" Category="Outbound" Name="DirectMail" Position="160,170" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Type="CSV" Encoding="UTF 8">
-              <SelectedColumns>
-                <Column Alias="First Name">##firstname##</Column>
-                <Column Alias="Middle Name">##middlename##</Column>
-                <Column Alias="Last Name">##lastname##</Column>
-                <Column Alias="Prefix">##prefix##</Column>
-                <Column Alias="Suffix">##suffix##</Column>
-                <Column Alias="Mobile">##mobile##</Column>
-                <Column Alias="Email">##email##</Column>
-                <Column Alias="Title">##title##</Column>
-                <Column Alias="Company">##company##</Column>
-                <Column Alias="Address 1">##address1##</Column>
-                <Column Alias="Address 2">##address2##</Column>
-                <Column Alias="City">##city##</Column>
-                <Column Alias="State">##state##</Column>
-                <Column Alias="Zip">##zip##</Column>
-                <Column Alias="Zip Plus 4">##zipplus4##</Column>
-                <Column Alias="Country">##country##</Column>
-                <Column Alias="Phone">##phone##</Column>
-                <Column Alias="Extension">##extension##</Column>
-                <Column Alias="Password">##password##</Column>
-                <Column Alias="Personalized URL">##purl##</Column>
-              </SelectedColumns>
-            </Message>
-            <EmailNotification>
-              <FromDisplayName>Foxtrot Team</FromDisplayName>
-              <ToAddress>rzamani@mindfireinc.com</ToAddress>
-              <Subject>Direct Mail Export File</Subject>
-              <Body>$Link&lt;br/&gt;$Mapping</Body>
-            </EmailNotification>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="4" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS" Position="520,170" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <FromAccountCredential>&lt;UserCredentials&gt;
-  &lt;ShortCode&gt;&lt;/ShortCode&gt;
-  &lt;LongCode&gt;&lt;/LongCode&gt;
-  &lt;NickName&gt;FOXT&lt;/NickName&gt;
-&lt;/UserCredentials&gt;</FromAccountCredential>
-              <To>##mobile##</To>
-              <Content>Hi ##firstname##, this is an SMS message.
-
-Reply STOP to cancel, HELP for support.</Content>
-              <SmsAccount>3</SmsAccount>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="5" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Twitter" Category="Outbound" Name="Twitter" Position="690,170" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Type="Tweet">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <Tweet>
-                <Content>Enter your tweet here!</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </Tweet>
-            </Message>
-            <Message Type="DirectMessage">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <DirectMessage DirectMessageAddress="##twitteraccount##" SendToFollowers="False">
-                <Content>Hi ##firstname##, this is your direct message.</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </DirectMessage>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="6" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Microsite" Category="Inbound" Name="Microsite-RSVP" Position="430,340" SharedCheckout="False" Permissions="">
-        <Schedules>
-          <Schedule DbId="0" Id="1" Status="Scheduled" Type="Fixed" TimeZone="Pacific Standard Time" EmailNotification="rzamani@mindfireinc.com">
-            <Subject>Microsite-RSVP (Right Now)</Subject>
-            <Body />
-            <Start DateTime="1/1/12 5:13 PM" />
-            <End DateTime="1/1/20 5:13 PM" />
-          </Schedule>
-        </Schedules>
-        <Events />
-        <CallbackTouchPoints>
-          <CallbackTouchPoint Id="1" DbId="0" Callback="http://demo.m.mdl.io/eventmarketing" />
-        </CallbackTouchPoints>
-        <Properties>
-          <BaseUrlCollection>
-            <BaseUrl Id="1" DbId="0" URL="demo.m.mdl.io/eventmarketing" Extension="eventmarketing" Outbound_Id="0" Outbound_DbId="0" Parent_Id="0" PurlPosition="Prefix" Domain="demo.m.mdl.io" SSL="False" SearchEngineAllowed="False" />
-          </BaseUrlCollection>
-        </Properties>
-        <ChildElements>
-          <ChildElement Id="1" DbId="0" Type="Page" IsVersion="False" Name="index.html" Position="330,40">
-            <Properties PageType="Page" IsHomePage="True" SkipPage="True" IsLoginRequired="False">
-              <HtmlContent />
-            </Properties>
-            <Flow DefaultNextChildName="g.html" DefaultNextChildId="2">
-              <FlowNextElement Id="2" Name="g.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <Criteria Row="1" Field="purl" Operator="Equal" Value="" />
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="4" Name="p.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <Criteria Row="1" Field="purl" Operator="NotEqual" Value="" />
-                </Filter>
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="2" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="g.html" Position="430,170">
-            <Properties PageType="AddContact" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
-		
-		&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
-		
-		&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/Demo/meeting.jpg" width="500" height="300" alt="Meet with the ##company_name## team"&gt;&lt;/p&gt;&lt;/center&gt;
-  		
-  		&lt;p&gt;At ##event_name##, our experienced Business Consultants are more than happy to meet with you and assist you with your questions about business strategy and growth.&lt;/p&gt;
-    	
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] At the ##company_name##'s booth you'll learn how to: &lt;/p&gt;
-				&lt;ul class=""&gt;
-		      		&lt;li&gt;Effortlessly find the best customers and prospects in your region, and send them special offers they cannot refuse.&lt;/li&gt;
-		      		&lt;li&gt;Design and implement customer loyalty programs that will keep your customers coming back to you for more business.&lt;/li&gt;
-		    	&lt;/ul&gt;
-		    	[end of hidden-phone section]
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-    	
-    	&lt;p&gt;Fill out the form to set an appointment at our booth in ##company_event##, or simply schedule an online demo to learn more about ##company_name##'s services!&lt;/p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
-
-		        &lt;label for="rsvp"&gt;&lt;strong&gt;What would you like to do?&lt;/strong&gt;*&lt;/label&gt;
-				&lt;select id="action" tabindex="5" name="rsvp"&gt;
-				    &lt;option value=""&gt;-- Select --&lt;/option&gt;
-				    &lt;option value="appointment"&gt;Schedule an appointment at ##event_name##&lt;/option&gt;
-				    &lt;option value="demo"&gt;Schedule an online demo&lt;/option&gt;
-				    &lt;option value="notsure"&gt;Not sure&lt;/option&gt;
-				&lt;/select&gt;
-	            
-	            &lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
-	          
-	            &lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
-	          
-	            &lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
-	          
-	            &lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
-	          
-	            &lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
-	          
-	            &lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
-	            &lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
-
-              &lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;         	
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
-      	We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-
-
-
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="DropDownBox" Name="rsvp">
-                <Options>
-                  <Option Score="0" Goal="0"></Option>
-                  <Option Score="0" Goal="0">appointment</Option>
-                  <Option Score="0" Goal="0">demo</Option>
-                  <Option Score="0" Goal="0">notsure</Option>
-                </Options>
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Let us know what you would like to do!</IsRequiredMessage>
-              </Input>
-              <Input Type="TextBox" Name="firstname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="lastname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="company">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="email">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="phone">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="mobile">
-                <IsRequired>False</IsRequired>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-            </Form>
-            <Flow DefaultNextChildName="a.html" DefaultNextChildId="5">
-              <FlowNextElement Id="5" Name="a.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="6" Name="b.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="7" Name="c.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="4" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="p.html" Position="230,170">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
-		
-		&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
-		
-		&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/Demo/meeting.jpg" width="500" height="300" alt="Meet with the ##company_name## team"&gt;&lt;/p&gt;&lt;/center&gt;
-  		
-  		&lt;p&gt;At ##event_name##, our experienced Business Consultants are more than happy to meet with you and assist you with your questions about business strategy and growth.&lt;/p&gt;
-    	
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] At the ##company_name##'s booth you'll learn how to: &lt;/p&gt;
-				&lt;ul class=""&gt;
-		      		&lt;li&gt;Effortlessly find the best customers and prospects in your region, and send them special offers they cannot refuse.&lt;/li&gt;
-		      		&lt;li&gt;Design and implement customer loyalty programs that will keep your customers coming back to you for more business.&lt;/li&gt;
-		    	&lt;/ul&gt;
-		    	[end of hidden-phone section]
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-    	
-    	&lt;p&gt;Fill out the form to set an appointment at our booth in ##event_name##, or simply schedule an online demo to learn more about ##company_name##'s services!&lt;/p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
-
-		        &lt;label for="rsvp"&gt;&lt;strong&gt;What would you like to do?&lt;/strong&gt;*&lt;/label&gt;
-				&lt;select id="action" tabindex="5" name="rsvp"&gt;
-				    &lt;option value=""&gt;-- Select --&lt;/option&gt;
-				    &lt;option value="appointment"&gt;Schedule an appointment at ##event_name##&lt;/option&gt;
-				    &lt;option value="demo"&gt;Schedule an online demo&lt;/option&gt;
-				    &lt;option value="notsure"&gt;Not sure&lt;/option&gt;
-				&lt;/select&gt;
-	            
-	            &lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
-	          
-	            &lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
-	          
-	            &lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
-	            &lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
-              
-           &lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;            
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
-      	We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="DropDownBox" Name="rsvp">
-                <Options>
-                  <Option Score="0" Goal="0"></Option>
-                  <Option Score="0" Goal="0">appointment</Option>
-                  <Option Score="0" Goal="0">demo</Option>
-                  <Option Score="0" Goal="0">notsure</Option>
-                </Options>
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Let us know what you would like to do!</IsRequiredMessage>
-              </Input>
-              <Input Type="TextBox" Name="email">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="phone">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="mobile">
-                <IsRequired>False</IsRequired>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-            </Form>
-            <Flow DefaultNextChildName="a.html" DefaultNextChildId="5">
-              <FlowNextElement Id="5" Name="a.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="6" Name="b.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="7" Name="c.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <AdvancedFilter CriteriaJoinOperator="&amp;">
-                    <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
-                  </AdvancedFilter>
-                </Filter>
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="5" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="a.html" Position="130,310">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
-		
-		&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
-		
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
-			&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/TradeShow/microsite/GEBooth1064.jpg" alt="Meet with the ##company_name## team at booth ##booth_number##"&gt;&lt;/p&gt;&lt;/center&gt;
-		    &lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-    	
-    	&lt;p&gt;Fill out the form to set an appointment at our booth!&lt;/p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
-				&lt;label for="action"&gt;&lt;strong&gt;Pick a date:&lt;/strong&gt;*&lt;/label&gt;
-		        &lt;select id="action" tabindex="10" name="appointmentday"&gt;
-				    &lt;option value=""&gt;-- Select --&lt;/option&gt;
-				    &lt;option value="event_day_one"&gt;##event_day_one##&lt;/option&gt;
-				    &lt;option value="event_day_two"&gt;##event_day_two##&lt;/option&gt;
-				    &lt;option value="event_day_three"&gt;##event_day_three##&lt;/option&gt;
-				&lt;/select&gt;
-	          
-	            &lt;label for="comments"&gt;&lt;strong&gt;Comments, questions?&lt;/strong&gt;&lt;/label&gt;
-	            &lt;textarea rows="3" type="textarea" name="comments" id="commment" tabindex="20"&gt;&lt;/textarea&gt;
-         	&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;    
-
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-
-
-
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="DropDownBox" Name="appointmentday">
-                <Options>
-                  <Option Score="0" Goal="0"></Option>
-                  <Option Score="0" Goal="0">event_day_one</Option>
-                  <Option Score="0" Goal="0">event_day_two</Option>
-                  <Option Score="0" Goal="0">event_day_three</Option>
-                </Options>
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please pick a date for your appointment!</IsRequiredMessage>
-              </Input>
-              <Input Type="TextArea" Name="comments">
-                <IsRequired>False</IsRequired>
-              </Input>
-            </Form>
-            <Flow>
-              <FlowNextElement Id="8" Name="ac.html">
-                <Filter CriteriaJoinOperator="&amp;" />
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="6" DbId="0" Type="Page" IsVersion="False" Name="b.html" Position="330,310">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Thank you, ##firstname##!&lt;/p&gt;
-		
-		&lt;p&gt;Looking forward to meeting with you (online)!&lt;/p&gt;
-		&lt;p&gt;Please enter a couple of dates that are most convenient for you for an online meeting. We'll contact you within 1 business day to confirm it.&lt;/p&gt;
-		
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-    	
-    	&lt;p&gt;Fill out the form to set an online demo!&lt;/p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
-		        &lt;label for="dateb"&gt;&lt;strong&gt;Please enter a couple of desired dates:&lt;/strong&gt;*&lt;/label&gt;
-        		&lt;input type="text" name="demodate1" id="demodate1"  placeholder="Date 1 (Required): mm/dd/yy"&gt;
-				&lt;input type="text" name="demodate2" id="demodate2"  placeholder="Date 2 (Optional): mm/dd/yy"&gt;
-	          
-	            &lt;label for="comments"&gt;&lt;strong&gt;Comments, questions?&lt;/strong&gt;&lt;/label&gt;
-	            &lt;textarea rows="3" type="textarea" name="comments" id="commment" tabindex="20"&gt;&lt;/textarea&gt;
-         	&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;    
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-
-
-
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="TextBox" Name="demodate1">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter at least one suggested date for your demo!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="demodate2">
-                <IsRequired>False</IsRequired>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextArea" Name="comments">
-                <IsRequired>False</IsRequired>
-              </Input>
-            </Form>
-            <Flow>
-              <FlowNextElement Id="9" Name="bc.html">
-                <Filter CriteriaJoinOperator="&amp;" />
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="7" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="c.html" Position="520,310">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Sorry we miss you, ##firstname##!&lt;/p&gt;
-		
-		&lt;p&gt;It's not too late, though. You can still learn about our solution and see how you can help your sales and marketing team do more with less. Simply open a free trial account to get started now!&lt;/p&gt;
-
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
-			&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
-			&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
-			&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;section id="sidebar"&gt;
-
-	&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
-	&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt; 
-	&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
-
-
-&lt;/section&gt;
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Flow />
-            <Events />
-          </ChildElement>
-          <ChildElement Id="8" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="ac.html" Position="130,440">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Looking forward to seeing you, ##firstname##!&lt;/p&gt;
-		
-		&lt;p&gt;We'll contact you within one business day to confirm our appointment at ##event_name##!&lt;/p&gt;
-
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
-			&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
-			&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
-			&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;section id="sidebar"&gt;
-
-	&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
-	&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt; 
-	&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
-
-
-&lt;/section&gt;
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Flow />
-            <Events />
-          </ChildElement>
-          <ChildElement Id="9" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="bc.html" Position="330,440">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Looking forward to meeting with you, ##firstname##!&lt;/p&gt;
-		
-		&lt;p&gt;We'll contact you within one business day to confirm our online meeting!&lt;/p&gt;
-
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
-			&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
-			&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
-			&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;section id="sidebar"&gt;
-
-	&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
-	&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt; 
-	&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
-
-
-&lt;/section&gt;
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Flow />
-            <Events />
-          </ChildElement>
-          <ChildElement Id="10" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="remove.html" Position="750,310">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;div class="alert alert-error"&gt;&lt;p class="lead"&gt;Unsubscription confirmed.&lt;/p&gt;
-		
-		&lt;p&gt;##firstname##, you &lt;span class="label label-important"&gt;WILL NOT&lt;/span&gt; receive any further emails from us at this email address: ##email##!&lt;/p&gt;&lt;/div&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;section id="sidebar"&gt;
-
-	&lt;h4&gt;Let us know how we can improve!&lt;/h4&gt;
-	&lt;p&gt;Take a moment and let us know how we can better serve you.&lt;/p&gt; 
-	&lt;a href="##company_contact_link##" class="btn btn-large btn-primary btn-block"&gt;Contact us!&lt;/a&gt;
-
-
-&lt;/section&gt;
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Flow />
-            <Events />
-          </ChildElement>
-        </ChildElements>
-        <ChildConnections>
-          <ChildConnection StartElementId="1" EndElementId="4" />
-          <ChildConnection StartElementId="1" EndElementId="2" />
-          <ChildConnection StartElementId="4" EndElementId="5" />
-          <ChildConnection StartElementId="4" EndElementId="6" />
-          <ChildConnection StartElementId="4" EndElementId="7" />
-          <ChildConnection StartElementId="2" EndElementId="5" />
-          <ChildConnection StartElementId="2" EndElementId="6" />
-          <ChildConnection StartElementId="2" EndElementId="7" />
-          <ChildConnection StartElementId="5" EndElementId="8" />
-          <ChildConnection StartElementId="6" EndElementId="9" />
-        </ChildConnections>
-      </CampaignElement>
-      <CampaignElement Id="7" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Appointment" Position="320,510" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <AdvancedFilter CriteriaJoinOperator="|">
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
-          </AdvancedFilter>
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Child Visit">
-          <Event EventId="30502" ElementId="6" ChildElementId="2" />
-          <Event EventId="30502" ElementId="6" ChildElementId="4" />
-        </HookedEvents>
-      </CampaignElement>
-      <CampaignElement Id="8" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Demo" Position="540,510" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <AdvancedFilter CriteriaJoinOperator="|">
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
-          </AdvancedFilter>
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Child Visit">
-          <Event EventId="30502" ElementId="6" ChildElementId="2" />
-          <Event EventId="30502" ElementId="6" ChildElementId="4" />
-        </HookedEvents>
-      </CampaignElement>
-      <CampaignElement Id="9" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Not Sure" Position="760,510" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <AdvancedFilter CriteriaJoinOperator="|">
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
-            <AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
-          </AdvancedFilter>
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Child Visit">
-          <Event EventId="30502" ElementId="6" ChildElementId="2" />
-          <Event EventId="30502" ElementId="6" ChildElementId="4" />
-        </HookedEvents>
-      </CampaignElement>
-      <CampaignElement Id="10" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Unsubscribe" Position="1040,500" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <AdvancedFilter CriteriaJoinOperator="&amp;">
-            <AdvancedCriteria Criteria="Achieved a Goal" CriteriaId="1" From="1/1/10" To="1/1/20" ProgramId="-1" CampaignId="-1" OutboundId="-1" CriteriaOption="4" Operator="GreaterThan" Value="0" />
-          </AdvancedFilter>
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Child Visit">
-          <Event EventId="30500" ElementId="6" />
-        </HookedEvents>
-      </CampaignElement>
-      <CampaignElement Id="11" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Alert Email A" Position="170,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email_sales_rep##</ToAddress>
-              <FromName>Campaign ##event_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>##firstname## ##lastname## of ##company## requested a demo at ##event_name## campaign.</Subject>
-              <HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
-              <TextContent>Set up an appointment at ##event_name## with:
-##firstname## ##lastname## of ##company##
-Phone:##phone##
-Cell:##mobile##
-Email: ##email##
-Appointment requested for: ##appointmentday##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="12" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email A" Position="320,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>##email_sales_rep_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Looking forward to seeing you, ##firstname##!</Subject>
-              <HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
-
-&lt;p&gt;I'll contact you within one business day to confirm our appointment at ##event_name##.&lt;p&gt;
-
-&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
-
-&lt;p&gt;##email_signature##&lt;p&gt;
-
-&lt;p&gt;##company_address##&lt;/p&gt;
-
-Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
-              <TextContent />
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="13" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email B" Position="460,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email_sales_rep##</ToAddress>
-              <FromName>Campaign ##event_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>##firstname## ##lastname## of ##company## requested a demo at ##event_name## campaign.</Subject>
-              <HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
-              <TextContent>Set up a demo prior to ##event_date## with:
-##firstname## ##lastname## of ##company##
-Phone:##phone##
-Cell:##mobile##
-Email: ##email##
-Demo requested for: 
-Option 1: ##demodate1##
-Option 2: ##demodate2##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="14" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email B" Position="610,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>##email_sales_rep_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Looking forward to meeting with you, ##firstname##!</Subject>
-              <HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
-
-&lt;p&gt;I'll contact you within one business day to confirm our online meeting.&lt;p&gt;
-
-&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
-
-&lt;p&gt;##email_signature##&lt;p&gt;
-
-&lt;p&gt;##company_address##&lt;/p&gt;
-
-Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
-              <TextContent />
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="15" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email C" Position="760,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email_sales_rep##</ToAddress>
-              <FromName>Campaign ##event_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>##firstname## ##lastname## of ##company## responded "Not Sure" to ##event_name## campaign.</Subject>
-              <HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
-              <TextContent>Follow up with:
-##firstname## ##lastname## of ##company##
-Phone:##phone##
-Cell:##mobile##
-Email: ##email##
-</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="16" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email C" Position="900,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>##email_sales_rep_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Sorry we'll miss you, ##firstname##</Subject>
-              <HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
-
-&lt;p&gt;I'm sorry we'll miss you at ##event_name##. Be sure to take a moment and visit our special offer at: ##company_offer_link##. &lt;p&gt;
-
-&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
-
-&lt;p&gt;##email_signature##&lt;p&gt;
-
-&lt;p&gt;##company_address##&lt;/p&gt;
-
-Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="17" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Unsubscribe Email Alert" Position="1040,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email_sales_rep##</ToAddress>
-              <FromName>Campaign: ##event_name## </FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>##firstname## ##lastname## of ##company## unsubscribed at ##event_name## campaign.</Subject>
-              <HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
-              <TextContent />
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="19" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS" Position="30,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <FromAccountCredential>&lt;UserCredentials&gt;
-  &lt;ShortCode&gt;&lt;/ShortCode&gt;
-  &lt;LongCode&gt;&lt;/LongCode&gt;
-  &lt;NickName&gt;FOXT&lt;/NickName&gt;
-&lt;/UserCredentials&gt;</FromAccountCredential>
-              <To>1234567890</To>
-              <Content>Set up an appointment at ##event_name## with:
-##firstname## ##lastname## of ##company##
-Phone:##phone##
-Cell:##mobile##
-Email: ##email##
-Appointment requested for: ##appointmentday##</Content>
-              <SmsAccount>3</SmsAccount>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-    </CampaignElements>
-    <CampaignConnections>
-      <CampaignConnection StartElementId="2" EndElementId="1" />
-      <CampaignConnection StartElementId="2" EndElementId="3" />
-      <CampaignConnection StartElementId="2" EndElementId="4" />
-      <CampaignConnection StartElementId="2" EndElementId="5" />
-      <CampaignConnection StartElementId="3" EndElementId="6" />
-      <CampaignConnection StartElementId="1" EndElementId="6" />
-      <CampaignConnection StartElementId="4" EndElementId="6" />
-      <CampaignConnection StartElementId="5" EndElementId="6" />
-      <CampaignConnection StartElementId="6" EndElementId="7" />
-      <CampaignConnection StartElementId="6" EndElementId="8" />
-      <CampaignConnection StartElementId="6" EndElementId="9" />
-      <CampaignConnection StartElementId="6" EndElementId="10" />
-      <CampaignConnection StartElementId="7" EndElementId="11" />
-      <CampaignConnection StartElementId="7" EndElementId="12" />
-      <CampaignConnection StartElementId="8" EndElementId="13" />
-      <CampaignConnection StartElementId="8" EndElementId="14" />
-      <CampaignConnection StartElementId="9" EndElementId="15" />
-      <CampaignConnection StartElementId="9" EndElementId="16" />
-      <CampaignConnection StartElementId="10" EndElementId="17" />
-      <CampaignConnection StartElementId="7" EndElementId="19" />
-    </CampaignConnections>
-  </Campaign>
-  <Campaign Name="Show Time" Version="1.0" Id="2" DbId="0" CheckOutId="0" State="Start" Permissions="">
-    <CampaignElements>
-      <CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="230,20" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Visit" />
-      </CampaignElement>
-      <CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 2" Position="170,260" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>Your name here</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Subject line here</Subject>
-              <HtmlContent />
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="3" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 1" Position="130,160" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>Your name here</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Subject line here</Subject>
-              <HtmlContent />
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="4" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 3" Position="200,360" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>Your name here</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Subject line here</Subject>
-              <HtmlContent />
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="5" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 1" Position="290,160" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <FromAccountCredential>&lt;UserCredentials&gt;
-  &lt;ShortCode&gt;&lt;/ShortCode&gt;
-  &lt;LongCode&gt;&lt;/LongCode&gt;
-  &lt;NickName&gt;FOXT&lt;/NickName&gt;
-&lt;/UserCredentials&gt;</FromAccountCredential>
-              <To>##mobile##</To>
-              <Content>Hi ##firstname##, this is an SMS message.
-
-Reply STOP to cancel, HELP for support.</Content>
-              <SmsAccount>3</SmsAccount>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="7" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 2" Position="320,260" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <FromAccountCredential>&lt;UserCredentials&gt;
-  &lt;ShortCode&gt;&lt;/ShortCode&gt;
-  &lt;LongCode&gt;&lt;/LongCode&gt;
-  &lt;NickName&gt;FOXT&lt;/NickName&gt;
-&lt;/UserCredentials&gt;</FromAccountCredential>
-              <To>##mobile##</To>
-              <Content>Hi ##firstname##, this is an SMS message.
-
-Reply STOP to cancel, HELP for support.</Content>
-              <SmsAccount>3</SmsAccount>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="8" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 3" Position="340,360" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <FromAccountCredential>&lt;UserCredentials&gt;
-  &lt;ShortCode&gt;&lt;/ShortCode&gt;
-  &lt;LongCode&gt;&lt;/LongCode&gt;
-  &lt;NickName&gt;FOXT&lt;/NickName&gt;
-&lt;/UserCredentials&gt;</FromAccountCredential>
-              <To>##mobile##</To>
-              <Content>Hi ##firstname##, this is an SMS message.
-
-Reply STOP to cancel, HELP for support.</Content>
-              <SmsAccount>3</SmsAccount>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="9" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Twitter" Category="Outbound" Name="Twitter" Position="440,160" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Type="Tweet">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <Tweet>
-                <Content>Your tweet here!</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </Tweet>
-            </Message>
-            <Message Type="DirectMessage">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <DirectMessage DirectMessageAddress="##twitteraccount##" SendToFollowers="False">
-                <Content>Hi ##firstname##, this is your direct message.</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </DirectMessage>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="10" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Twitter" Category="Outbound" Name="Twitter" Position="470,260" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Type="Tweet">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <Tweet>
-                <Content>Your tweet here!</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </Tweet>
-            </Message>
-            <Message Type="DirectMessage">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <DirectMessage DirectMessageAddress="##twitteraccount##" SendToFollowers="False">
-                <Content>Hi ##firstname##, this is your direct message.</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </DirectMessage>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="11" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Twitter" Category="Outbound" Name="Twitter" Position="490,360" SharedCheckout="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Type="Tweet">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <Tweet>
-                <Content>Your tweet here!</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </Tweet>
-            </Message>
-            <Message Type="DirectMessage">
-              <Credential>&lt;UserCredentials&gt;
-  &lt;AccessToken&gt;17496414-t0y1xsOKRVXRARN89tHq3dkypi19XxXmMkMuJbDV9&lt;/AccessToken&gt;
-  &lt;AccessTokenSecret&gt;Rm8ux6XmMUtb6JZTPApa9K0RbmGKG222BBeQDuRRFE&lt;/AccessTokenSecret&gt;
-&lt;/UserCredentials&gt;</Credential>
-              <DirectMessage DirectMessageAddress="##twitteraccount##" SendToFollowers="False">
-                <Content>Hi ##firstname##, this is your direct message.</Content>
-                <TwitterAccount>4</TwitterAccount>
-              </DirectMessage>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="12" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Microsite" Category="Inbound" Name="Microsite-Offer" Position="720,120" SharedCheckout="False" Permissions="">
-        <Schedules>
-          <Schedule DbId="0" Id="1" Status="Scheduled" Type="Fixed" TimeZone="Pacific Standard Time" EmailNotification="rzamani@mindfireinc.com">
-            <Subject>Microsite-Show Time (Right Now)</Subject>
-            <Body />
-            <Start DateTime="1/1/10 10:04 AM" />
-            <End DateTime="1/1/20 10:04 AM" />
-          </Schedule>
-        </Schedules>
-        <Events />
-        <CallbackTouchPoints>
-          <CallbackTouchPoint Id="1" DbId="0" Callback="http://demo.m.mdl.io/showtime" />
-        </CallbackTouchPoints>
-        <Properties>
-          <BaseUrlCollection>
-            <BaseUrl Id="1" DbId="0" URL="demo.m.mdl.io/showtime" Extension="showtime" Outbound_Id="0" Outbound_DbId="0" Parent_Id="0" PurlPosition="Prefix" Domain="demo.m.mdl.io" SSL="False" SearchEngineAllowed="False" />
-          </BaseUrlCollection>
-        </Properties>
-        <ChildElements>
-          <ChildElement Id="1" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="g2.html" Position="380,140">
-            <Properties PageType="AddContact" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Sign up for ##company_name## Special Offer at ##event_name##!&lt;/p&gt;
-		
-		&lt;p&gt;Visit us at our booth ##booth_number##, or schedule an online meeting before ##event_date##, to take advantage of our Special Offer! This exceptional opportunity is available only before or during the ##event_name##. Sign up now find out more!&lt;/p&gt;
-
-		&lt;p&gt;&lt;center&gt;&lt;img src="http://dl.dropbox.com/u/2126295/boot/img/z-badge-1.png"&gt;&lt;/center&gt;&lt;p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
-	            
-	            &lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
-	          
-	            &lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
-	          
-	            &lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
-	          
-	            &lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
-	          
-	            &lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
-	          
-	            &lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
-	            &lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
-         	&lt;button type="button" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;Send&lt;/button&gt;	
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
-      	We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-
-
-
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="TextBox" Name="firstname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="lastname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="company">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="email">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="phone">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="mobile">
-                <IsRequired>False</IsRequired>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-            </Form>
-            <Flow>
-              <FlowNextElement Id="4" Name="pg2c.html">
-                <Filter CriteriaJoinOperator="&amp;" />
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="2" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="p2.html" Position="210,140">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Sign up for ##company_name## Special Offer at ##event_name##!&lt;/p&gt;
-		
-		&lt;p&gt;Visit us at our booth ##booth_number##, or schedule an online meeting before ##event_date##, to take advantage of our Special Offer! This exceptional opportunity is available only before or during the ##event_name##. Sign up now find out more!&lt;/p&gt;
-
-		&lt;p&gt;&lt;center&gt;&lt;img src="http://dl.dropbox.com/u/2126295/boot/img/z-badge-1.png"&gt;&lt;/center&gt;&lt;p&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;form name="form1" method="post"&gt;
-      	&lt;fieldset&gt;
-        	&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
-	            
-	            &lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
-	          
-	            &lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
-	          
-	            &lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
-	          
-	            &lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
-	          
-	            &lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
-	            &lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
-	          
-	            &lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
-	            &lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
-         	&lt;button type="button" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;Send&lt;/button&gt;	
-		&lt;/fieldset&gt;
-      	
-      	&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
-      	We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-&lt;/form&gt;
-
-
-
-
-
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Form>
-              <Input Type="TextBox" Name="firstname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="lastname">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="company">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="email">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="phone">
-                <IsRequired>True</IsRequired>
-                <IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-              <Input Type="TextBox" Name="mobile">
-                <IsRequired>False</IsRequired>
-                <ValidationRegex />
-                <ValidationRegexMessage />
-              </Input>
-            </Form>
-            <Flow>
-              <FlowNextElement Id="4" Name="pg2c.html">
-                <Filter CriteriaJoinOperator="&amp;" />
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="3" DbId="0" Type="Page" IsVersion="False" Name="index2.html" Position="293,18">
-            <Properties PageType="Page" IsHomePage="True" SkipPage="True" IsLoginRequired="False">
-              <HtmlContent />
-            </Properties>
-            <Flow DefaultNextChildName="g2.html" DefaultNextChildId="1">
-              <FlowNextElement Id="1" Name="g2.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <Criteria Row="1" Field="purl" Operator="Equal" Value="" />
-                </Filter>
-              </FlowNextElement>
-              <FlowNextElement Id="2" Name="p2.html">
-                <Filter CriteriaJoinOperator="&amp;">
-                  <Criteria Row="1" Field="purl" Operator="NotEqual" Value="" />
-                </Filter>
-              </FlowNextElement>
-            </Flow>
-            <Events />
-          </ChildElement>
-          <ChildElement Id="4" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="pg2c.html" Position="300,280">
-            <Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
-              <HtmlContent>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-##page_head##
-&lt;body&gt;
-&lt;div class="container-fluid"&gt;
-
-	&lt;div class="page-header"&gt;
-      &lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
-      &lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
-    &lt;/div&gt;&lt;!--/page-header--&gt;
-
-	&lt;div class="row-fluid"&gt;
-
-	&lt;div class="span8"&gt;
-		&lt;p class="lead"&gt;Thank you, ##firstname##!&lt;/p&gt;
-		
-		&lt;p&gt;We'll contact you within one business day to review our Special Offer together!&lt;/p&gt;
-
-    	&lt;!-- the following section will not appear on a phone--&gt;	
-		&lt;section class="hidden-phone"&gt;
-			&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
-			&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
-			&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
-			&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
-		&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
-
-	&lt;/div&gt;&lt;!--/main--&gt;
-
-	&lt;div class="well span4"&gt;
-&lt;section id="sidebar"&gt;
-
-	&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
-	&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt; 
-	&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
-
-
-&lt;/section&gt;
-	&lt;/div&gt;&lt;!--/sidebar--&gt;
-	
-	&lt;/div&gt;&lt;!--/row-fluid--&gt;
-
-
-##page_footer##
-&lt;/body&gt;	 </HtmlContent>
-            </Properties>
-            <Flow />
-            <Events />
-          </ChildElement>
-        </ChildElements>
-        <ChildConnections>
-          <ChildConnection StartElementId="3" EndElementId="2" />
-          <ChildConnection StartElementId="3" EndElementId="1" />
-          <ChildConnection StartElementId="2" EndElementId="4" />
-          <ChildConnection StartElementId="1" EndElementId="4" />
-        </ChildConnections>
-      </CampaignElement>
-      <CampaignElement Id="14" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Interested in Offer" Position="720,230" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <AdvancedFilter CriteriaJoinOperator="&amp;">
-            <AdvancedCriteria Criteria="Performed an Event" CriteriaId="2" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-2" InboundId="-12" CriteriaOption="30502" Operator="GreaterThan" Value="0" />
-          </AdvancedFilter>
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Visit">
-          <Event EventId="30502" ElementId="12" ChildElementId="1" />
-          <Event EventId="30502" ElementId="12" ChildElementId="2" />
-        </HookedEvents>
-      </CampaignElement>
-      <CampaignElement Id="13" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email Offer" Position="650,360" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email_sales_rep##</ToAddress>
-              <FromName>Campaign ##event_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>##firstname## ##lastname## of ##company## is interested in our Special Offer for ##event_name##</Subject>
-              <HtmlContent>##ContactHistory ProgramId="17"  InboundIds="15" EventIds="30502" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
-              <TextContent>The following contact is interested in our Special Offer for ##event_name##:
-##firstname## ##lastname## of ##company##
-Phone:##phone##
-Cell:##mobile##
-Email: ##email##
-</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-      <CampaignElement Id="15" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email Offer" Position="800,360" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>##email_sales_rep_name##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Thank you for your interest in ##company_name##</Subject>
-              <HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
-
-&lt;p&gt;I'll contact you within one business day to review our Special Offer for ##event_name##.&lt;p&gt;
-
-&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
-
-&lt;p&gt;##email_signature##&lt;p&gt;
-
-&lt;p&gt;##company_address##&lt;/p&gt;
-
-Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-    </CampaignElements>
-    <CampaignConnections>
-      <CampaignConnection StartElementId="1" EndElementId="2" />
-      <CampaignConnection StartElementId="1" EndElementId="3" />
-      <CampaignConnection StartElementId="1" EndElementId="4" />
-      <CampaignConnection StartElementId="1" EndElementId="5" />
-      <CampaignConnection StartElementId="1" EndElementId="7" />
-      <CampaignConnection StartElementId="1" EndElementId="8" />
-      <CampaignConnection StartElementId="1" EndElementId="11" />
-      <CampaignConnection StartElementId="1" EndElementId="10" />
-      <CampaignConnection StartElementId="1" EndElementId="9" />
-      <CampaignConnection StartElementId="12" EndElementId="14" />
-      <CampaignConnection StartElementId="14" EndElementId="13" />
-      <CampaignConnection StartElementId="14" EndElementId="15" />
-    </CampaignConnections>
-  </Campaign>
-  <Campaign Name="Post Show" Version="1.0" Id="3" DbId="0" CheckOutId="0" State="Start" Permissions="">
-    <CampaignElements>
-      <CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="400,100" SharedCheckout="False" Permissions="">
-        <Filter CriteriaJoinOperator="&amp;">
-          <Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
-        </Filter>
-        <HookedEvents TriggerFireContext="Current Visit" />
-      </CampaignElement>
-      <CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Follow up Email" Position="400,250" SharedCheckout="False" RuleGroup="Content Variables" Permissions="">
-        <Events />
-        <Properties>
-          <Messages>
-            <Message Id="1">
-              <ToAddress>##email##</ToAddress>
-              <FromName>##email_sales_rep##</FromName>
-              <FromAddress>rzamani@mindfireinc.com</FromAddress>
-              <ReplyTo>rzamani@mindfireinc.com</ReplyTo>
-              <Subject>Thanks for your interest in ##company_name##!</Subject>
-              <HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
-
-&lt;p&gt;Hope you've had a great time at ##event_name##. I wanted to follow up with you to make sure you don't miss out on our exceptional Speical Offer for this event.&lt;/P&gt;
-
-&lt;p&gt;To learn more about ##company_offer## and see how you can take advantage of this incredible opportunity, &lt;a href="##company_brochure_link##"&gt;click here to download our new brochure&lt;/a&gt;!
-
-&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
-
-&lt;p&gt;##email_signature##&lt;p&gt;
-
-&lt;p&gt;##company_address##&lt;/p&gt;
-
-Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
-              <TextContent>Hi ##firstname##, this is the text email.
-
-Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
-
-COMPANY NAME | ADDRESS | CITY, STATE ZIP 
-
-To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
-            </Message>
-          </Messages>
-        </Properties>
-      </CampaignElement>
-    </CampaignElements>
-    <CampaignConnections>
-      <CampaignConnection StartElementId="1" EndElementId="2" />
-    </CampaignConnections>
-  </Campaign>
-  <RuleGroupSet>
-    <RuleGroup Name="Content Variables" Description="Use to update the content">
-      <ContentVariables>
-        <ContentVariable Name="email_preview_text">Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.</ContentVariable>
-        <ContentVariable Name="email_in_browser_link">http://#
-</ContentVariable>
-        <ContentVariable Name="email_header">email_header: Use an attention grabbing headline!</ContentVariable>
-        <ContentVariable Name="email_content">email_content: The main body copy of the email goes here. Update with your awesome content. Use simple html tags to format the text, and add images or links as required.</ContentVariable>
-        <ContentVariable Name="email_unsubscribe_link">http://#</ContentVariable>
-        <ContentVariable Name="event_name">event_name: Sample Conference 2012</ContentVariable>
-        <ContentVariable Name="event_date">event_date: November 6-9</ContentVariable>
-        <ContentVariable Name="event_location">event_location: 123 Anystreet, Anytown, CA</ContentVariable>
-        <ContentVariable Name="event_booth">event_booth: Booth #123</ContentVariable>
-        <ContentVariable Name="company_name">company_name: Sample Co.</ContentVariable>
-        <ContentVariable Name="company_logo_link">http://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo300x75px.gif</ContentVariable>
-        <ContentVariable Name="company_copyright">company_copyright: &amp;copy; 2012 ##company_name##</ContentVariable>
-        <ContentVariable Name="company_address">company_address: 123 Any Street, Sample City, CA 92606</ContentVariable>
-        <ContentVariable Name="company_facebook_link">http://facebook.com</ContentVariable>
-        <ContentVariable Name="company_twitter_link">http://twitter.com</ContentVariable>
-        <ContentVariable Name="company_linkedin_link">http://linkedin.com</ContentVariable>
-        <ContentVariable Name="company_offer_link">http://#</ContentVariable>
-        <ContentVariable Name="company_phone">company_phone: 555-555-5555</ContentVariable>
-        <ContentVariable Name="company_offer">company_offer: Sample Offer</ContentVariable>
-        <ContentVariable Name="company_contact_link">http://#</ContentVariable>
-        <ContentVariable Name="page_head">&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;title&gt;Come see us at ##event_name##&lt;/title&gt;
-&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/bootstrap.min.css" rel="stylesheet" type="text/css"&gt;
-&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"&gt;
-&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/mycss.css" rel="stylesheet" type="text/css"&gt;
-&lt;!--[if IE]&gt;
-&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;
-&lt;/head&gt;</ContentVariable>
-        <ContentVariable Name="page_footer">&lt;footer class="clearfix"&gt;
-	&lt;hr&gt;
-	&lt;div class="row-fluid"&gt;
-		&lt;center&gt;&lt;small&gt;##company_copyright## | ##company_phone## | ##company_address##&lt;/small&gt;&lt;/center&gt; 
-	&lt;/div&gt;
-&lt;/footer&gt;
-&lt;/div&gt;&lt;!--/container-fluid--&gt;
-&lt;!--javascript codes--&gt; 
-&lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt; 
-&lt;script src="http://dl.dropbox.com/u/2126295/boot/js/bootstrap.min.js"&gt;&lt;/script&gt; 
-&lt;script src="http://dl.dropbox.com/u/2126295/boot/js/myjs.js" type="text/javascript"&gt;&lt;/script&gt; 
-&lt;!--/javascript codes--&gt;</ContentVariable>
-        <ContentVariable Name="email_font_face">Tahoma</ContentVariable>
-        <ContentVariable Name="company_privacy_link">http://#</ContentVariable>
-        <ContentVariable Name="email_signature">##email_sales_rep_name## &lt;br&gt;
-##company_name## &lt;br&gt;
-Phone: ##company_phone##&lt;br&gt;
-Email: ##email_sales_rep##
-</ContentVariable>
-        <ContentVariable Name="email_sales_rep">John@Sample.com</ContentVariable>
-        <ContentVariable Name="email_sales_rep_name">John Sample</ContentVariable>
-        <ContentVariable Name="company_brochure_link">http://#</ContentVariable>
-      </ContentVariables>
-    </RuleGroup>
-  </RuleGroupSet>
+								&lt;tr bgcolor="#f0f0f0"&gt;
+								&lt;td colspan="2" style="padding:15px;"&gt;
+								&lt;font face="##email_font_face##" size="3"&gt;##email_header##&lt;/font&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;tr&gt;
+								&lt;td colspan="2" style="height:10px"&gt;&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;tr&gt;
+								&lt;td colspan="2" style="padding:15px;font-family:##email_font_face##;font-size:13px;"&gt;
+								##email_content##
+								&lt;br&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;tr&gt;
+								&lt;td colspan="2" bgcolor="#f0f0f0" style="padding:15px;"&gt;
+								&lt;table width="100%"&gt;
+								&lt;tr&gt;
+								&lt;td&gt;
+								&lt;font face="##email_font_face##" size="2"&gt;
+								&lt;a href="##purl_link##"&gt;&lt;font face="##email_font_face##" size="2" color="#277AB9"&gt;Join us at ##event_name##&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+								##event_date## | ##event_location##&lt;br&gt;
+								##event_booth##&lt;br&gt;
+								&lt;/font&gt;
+								&lt;/td&gt;
+								&lt;td align="right"&gt;&lt;a href="##company_facebook_link##"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/facebook.png" /&gt;&lt;/a&gt;&lt;a href="##company_linkedin_link"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/linkedin.png" /&gt;&lt;/a&gt;&lt;a href="##company_twitter_link##"&gt;&lt;img src="https://dl.dropbox.com/u/2126295/Assets/tmplt/icons/twitter.png" /&gt;&lt;/a&gt;&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;/table&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;tr&gt;
+								&lt;td colspan="3" style="padding:15px;"&gt;
+								&lt;table width="100%"&gt;
+								&lt;tr&gt;
+								&lt;td&gt;
+								&lt;font face="##email_font_face##" size="2" color="#666666"&gt;
+								##company_copyright##&lt;br&gt;
+								&lt;font color="#999999"&gt;##company_address##&lt;/font&gt;
+								&lt;/font&gt;
+								&lt;/td&gt;
+								&lt;td colspan="2" align="right" valign="top" width="110px"&gt;
+								&lt;font face="##email_font_face##" size="2" color="#ff6600"&gt;
+								( &lt;a href="##email_unsubscribe_link##"&gt;&lt;font face="##email_font_face##" size="2" color="#277AB9"&gt;Unsubscribe&lt;/font&gt;&lt;/a&gt; )
+
+
+								&lt;/font&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;/table&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;/table&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;/table&gt;
+								&lt;/td&gt;
+								&lt;/tr&gt;
+								&lt;/table&gt;
+							</HtmlContent>
+							<TextContent>Add the text only version of your email here.
+
+
+
+
+								Make sure you include your mailing address, and unsubscribe link at the bottom of the email:
+
+								##company_copyright##
+								##company_address##
+								To usubscribe, click here: ##email_unsubscrible_link##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="420,40" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Visit" />
+			</CampaignElement>
+			<CampaignElement Id="3" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="DirectMail" Category="Outbound" Name="DirectMail" Position="160,170" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Type="CSV" Encoding="UTF 8">
+							<SelectedColumns>
+								<Column Alias="First Name">##firstname##</Column>
+								<Column Alias="Middle Name">##middlename##</Column>
+								<Column Alias="Last Name">##lastname##</Column>
+								<Column Alias="Prefix">##prefix##</Column>
+								<Column Alias="Suffix">##suffix##</Column>
+								<Column Alias="Mobile">##mobile##</Column>
+								<Column Alias="Email">##email##</Column>
+								<Column Alias="Title">##title##</Column>
+								<Column Alias="Company">##company##</Column>
+								<Column Alias="Address 1">##address1##</Column>
+								<Column Alias="Address 2">##address2##</Column>
+								<Column Alias="City">##city##</Column>
+								<Column Alias="State">##state##</Column>
+								<Column Alias="Zip">##zip##</Column>
+								<Column Alias="Zip Plus 4">##zipplus4##</Column>
+								<Column Alias="Country">##country##</Column>
+								<Column Alias="Phone">##phone##</Column>
+								<Column Alias="Extension">##extension##</Column>
+								<Column Alias="Password">##password##</Column>
+								<Column Alias="Personalized URL">##purl##</Column>
+							</SelectedColumns>
+						</Message>
+						<EmailNotification>
+							<FromDisplayName>Foxtrot Team</FromDisplayName>
+							<ToAddress>rzamani@mindfireinc.com</ToAddress>
+							<Subject>Direct Mail Export File</Subject>
+							<Body>$Link&lt;br/&gt;$Mapping</Body>
+						</EmailNotification>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="4" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS" Position="520,170" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<FromAccountCredential>&lt;UserCredentials&gt;
+								&lt;ShortCode&gt;&lt;/ShortCode&gt;
+								&lt;LongCode&gt;&lt;/LongCode&gt;
+								&lt;NickName&gt;FOXT&lt;/NickName&gt;
+								&lt;/UserCredentials&gt;</FromAccountCredential>
+							<To>##mobile##</To>
+							<Content>Hi ##firstname##, this is an SMS message.
+
+								Reply STOP to cancel, HELP for support.</Content>
+							<SmsAccount>3</SmsAccount>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="5" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Microsite" Category="Inbound" Name="Microsite-RSVP" Position="430,340" SharedCheckout="False" Permissions="">
+				<Schedules>
+					<Schedule DbId="0" Id="1" Status="Scheduled" Type="Fixed" TimeZone="Pacific Standard Time" EmailNotification="rzamani@mindfireinc.com">
+						<Subject>Microsite-RSVP (Right Now)</Subject>
+						<Body />
+						<Start DateTime="1/1/12 5:13 PM" />
+						<End DateTime="1/1/20 5:13 PM" />
+					</Schedule>
+				</Schedules>
+				<Events />
+				<CallbackTouchPoints>
+					<CallbackTouchPoint Id="1" DbId="0" Callback="http://demo.m.mdl.io/eventmarketing" />
+				</CallbackTouchPoints>
+				<Properties>
+					<BaseUrlCollection>
+						<BaseUrl Id="1" DbId="0" URL="demo.m.mdl.io/eventmarketing" Extension="eventmarketing" Outbound_Id="0" Outbound_DbId="0" Parent_Id="0" PurlPosition="Prefix" Domain="demo.m.mdl.io" SSL="False" SearchEngineAllowed="False" />
+					</BaseUrlCollection>
+				</Properties>
+				<ChildElements>
+					<ChildElement Id="1" DbId="0" Type="Page" IsVersion="False" Name="index.html" Position="330,40">
+						<Properties PageType="Page" IsHomePage="True" SkipPage="True" IsLoginRequired="False">
+							<HtmlContent />
+						</Properties>
+						<Flow DefaultNextChildName="g.html" DefaultNextChildId="2">
+							<FlowNextElement Id="2" Name="g.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<Criteria Row="1" Field="purl" Operator="Equal" Value="" />
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="4" Name="p.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<Criteria Row="1" Field="purl" Operator="NotEqual" Value="" />
+								</Filter>
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="2" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="g.html" Position="430,170">
+						<Properties PageType="AddContact" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
+
+								&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
+
+								&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/Demo/meeting.jpg" width="500" height="300" alt="Meet with the ##company_name## team"&gt;&lt;/p&gt;&lt;/center&gt;
+
+								&lt;p&gt;At ##event_name##, our experienced Business Consultants are more than happy to meet with you and assist you with your questions about business strategy and growth.&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] At the ##company_name##'s booth you'll learn how to: &lt;/p&gt;
+								&lt;ul class=""&gt;
+								&lt;li&gt;Effortlessly find the best customers and prospects in your region, and send them special offers they cannot refuse.&lt;/li&gt;
+								&lt;li&gt;Design and implement customer loyalty programs that will keep your customers coming back to you for more business.&lt;/li&gt;
+								&lt;/ul&gt;
+								[end of hidden-phone section]
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;p&gt;Fill out the form to set an appointment at our booth in ##company_event##, or simply schedule an online demo to learn more about ##company_name##'s services!&lt;/p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
+
+								&lt;label for="rsvp"&gt;&lt;strong&gt;What would you like to do?&lt;/strong&gt;*&lt;/label&gt;
+								&lt;select id="action" tabindex="5" name="rsvp"&gt;
+								&lt;option value=""&gt;-- Select --&lt;/option&gt;
+								&lt;option value="appointment"&gt;Schedule an appointment at ##event_name##&lt;/option&gt;
+								&lt;option value="demo"&gt;Schedule an online demo&lt;/option&gt;
+								&lt;option value="notsure"&gt;Not sure&lt;/option&gt;
+								&lt;/select&gt;
+
+								&lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
+
+								&lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
+
+								&lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
+
+								&lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
+
+								&lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
+
+								&lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
+								&lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
+
+								&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
+								We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+
+
+
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="DropDownBox" Name="rsvp">
+								<Options>
+									<Option Score="0" Goal="0"></Option>
+									<Option Score="0" Goal="0">appointment</Option>
+									<Option Score="0" Goal="0">demo</Option>
+									<Option Score="0" Goal="0">notsure</Option>
+								</Options>
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Let us know what you would like to do!</IsRequiredMessage>
+							</Input>
+							<Input Type="TextBox" Name="firstname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="lastname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="company">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="email">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="phone">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="mobile">
+								<IsRequired>False</IsRequired>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+						</Form>
+						<Flow DefaultNextChildName="a.html" DefaultNextChildId="5">
+							<FlowNextElement Id="5" Name="a.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="6" Name="b.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="7" Name="c.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="4" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="p.html" Position="230,170">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
+
+								&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
+
+								&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/Demo/meeting.jpg" width="500" height="300" alt="Meet with the ##company_name## team"&gt;&lt;/p&gt;&lt;/center&gt;
+
+								&lt;p&gt;At ##event_name##, our experienced Business Consultants are more than happy to meet with you and assist you with your questions about business strategy and growth.&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] At the ##company_name##'s booth you'll learn how to: &lt;/p&gt;
+								&lt;ul class=""&gt;
+								&lt;li&gt;Effortlessly find the best customers and prospects in your region, and send them special offers they cannot refuse.&lt;/li&gt;
+								&lt;li&gt;Design and implement customer loyalty programs that will keep your customers coming back to you for more business.&lt;/li&gt;
+								&lt;/ul&gt;
+								[end of hidden-phone section]
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;p&gt;Fill out the form to set an appointment at our booth in ##event_name##, or simply schedule an online demo to learn more about ##company_name##'s services!&lt;/p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
+
+								&lt;label for="rsvp"&gt;&lt;strong&gt;What would you like to do?&lt;/strong&gt;*&lt;/label&gt;
+								&lt;select id="action" tabindex="5" name="rsvp"&gt;
+								&lt;option value=""&gt;-- Select --&lt;/option&gt;
+								&lt;option value="appointment"&gt;Schedule an appointment at ##event_name##&lt;/option&gt;
+								&lt;option value="demo"&gt;Schedule an online demo&lt;/option&gt;
+								&lt;option value="notsure"&gt;Not sure&lt;/option&gt;
+								&lt;/select&gt;
+
+								&lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
+
+								&lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
+
+								&lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
+								&lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
+
+								&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
+								We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="DropDownBox" Name="rsvp">
+								<Options>
+									<Option Score="0" Goal="0"></Option>
+									<Option Score="0" Goal="0">appointment</Option>
+									<Option Score="0" Goal="0">demo</Option>
+									<Option Score="0" Goal="0">notsure</Option>
+								</Options>
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Let us know what you would like to do!</IsRequiredMessage>
+							</Input>
+							<Input Type="TextBox" Name="email">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="phone">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="mobile">
+								<IsRequired>False</IsRequired>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+						</Form>
+						<Flow DefaultNextChildName="a.html" DefaultNextChildId="5">
+							<FlowNextElement Id="5" Name="a.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="6" Name="b.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="7" Name="c.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<AdvancedFilter CriteriaJoinOperator="&amp;">
+										<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
+									</AdvancedFilter>
+								</Filter>
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="5" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="a.html" Position="130,310">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Join the ##company_name## team at ##event_name##!&lt;/p&gt;
+
+								&lt;p&gt;Visit us on ##event_date## at our booth ##booth_number## for a brief meeting and learn how you can win new business and keep your customers happy!&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
+								&lt;center&gt;&lt;p&gt;&lt;img class="img-rounded" src="http://dl.dropbox.com/u/2126295/TradeShow/microsite/GEBooth1064.jpg" alt="Meet with the ##company_name## team at booth ##booth_number##"&gt;&lt;/p&gt;&lt;/center&gt;
+								&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;p&gt;Fill out the form to set an appointment at our booth!&lt;/p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form to RSVP:&lt;/legend&gt;
+								&lt;label for="action"&gt;&lt;strong&gt;Pick a date:&lt;/strong&gt;*&lt;/label&gt;
+								&lt;select id="action" tabindex="10" name="appointmentday"&gt;
+								&lt;option value=""&gt;-- Select --&lt;/option&gt;
+								&lt;option value="event_day_one"&gt;##event_day_one##&lt;/option&gt;
+								&lt;option value="event_day_two"&gt;##event_day_two##&lt;/option&gt;
+								&lt;option value="event_day_three"&gt;##event_day_three##&lt;/option&gt;
+								&lt;/select&gt;
+
+								&lt;label for="comments"&gt;&lt;strong&gt;Comments, questions?&lt;/strong&gt;&lt;/label&gt;
+								&lt;textarea rows="3" type="textarea" name="comments" id="commment" tabindex="20"&gt;&lt;/textarea&gt;
+								&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;
+
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+
+
+
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="DropDownBox" Name="appointmentday">
+								<Options>
+									<Option Score="0" Goal="0"></Option>
+									<Option Score="0" Goal="0">event_day_one</Option>
+									<Option Score="0" Goal="0">event_day_two</Option>
+									<Option Score="0" Goal="0">event_day_three</Option>
+								</Options>
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please pick a date for your appointment!</IsRequiredMessage>
+							</Input>
+							<Input Type="TextArea" Name="comments">
+								<IsRequired>False</IsRequired>
+							</Input>
+						</Form>
+						<Flow>
+							<FlowNextElement Id="8" Name="ac.html">
+								<Filter CriteriaJoinOperator="&amp;" />
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="6" DbId="0" Type="Page" IsVersion="False" Name="b.html" Position="330,310">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Thank you, ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;Looking forward to meeting with you (online)!&lt;/p&gt;
+								&lt;p&gt;Please enter a couple of dates that are most convenient for you for an online meeting. We'll contact you within 1 business day to confirm it.&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;p&gt;Fill out the form to set an online demo!&lt;/p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
+								&lt;label for="dateb"&gt;&lt;strong&gt;Please enter a couple of desired dates:&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="demodate1" id="demodate1"  placeholder="Date 1 (Required): mm/dd/yy"&gt;
+								&lt;input type="text" name="demodate2" id="demodate2"  placeholder="Date 2 (Optional): mm/dd/yy"&gt;
+
+								&lt;label for="comments"&gt;&lt;strong&gt;Comments, questions?&lt;/strong&gt;&lt;/label&gt;
+								&lt;textarea rows="3" type="textarea" name="comments" id="commment" tabindex="20"&gt;&lt;/textarea&gt;
+								&lt;input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+
+
+
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="TextBox" Name="demodate1">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter at least one suggested date for your demo!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="demodate2">
+								<IsRequired>False</IsRequired>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextArea" Name="comments">
+								<IsRequired>False</IsRequired>
+							</Input>
+						</Form>
+						<Flow>
+							<FlowNextElement Id="9" Name="bc.html">
+								<Filter CriteriaJoinOperator="&amp;" />
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="7" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="c.html" Position="520,310">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Sorry we miss you, ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;It's not too late, though. You can still learn about our solution and see how you can help your sales and marketing team do more with less. Simply open a free trial account to get started now!&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
+								&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
+								&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+								&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;section id="sidebar"&gt;
+
+								&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
+								&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt;
+								&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
+
+
+								&lt;/section&gt;
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Flow />
+						<Events />
+					</ChildElement>
+					<ChildElement Id="8" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="ac.html" Position="130,440">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Looking forward to seeing you, ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;We'll contact you within one business day to confirm our appointment at ##event_name##!&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
+								&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
+								&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+								&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;section id="sidebar"&gt;
+
+								&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
+								&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt;
+								&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
+
+
+								&lt;/section&gt;
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Flow />
+						<Events />
+					</ChildElement>
+					<ChildElement Id="9" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="bc.html" Position="330,440">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Looking forward to meeting with you, ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;We'll contact you within one business day to confirm our online meeting!&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
+								&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
+								&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+								&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;section id="sidebar"&gt;
+
+								&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
+								&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt;
+								&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
+
+
+								&lt;/section&gt;
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Flow />
+						<Events />
+					</ChildElement>
+					<ChildElement Id="10" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="remove.html" Position="750,310">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;div class="alert alert-error"&gt;&lt;p class="lead"&gt;Unsubscription confirmed.&lt;/p&gt;
+
+								&lt;p&gt;##firstname##, you &lt;span class="label label-important"&gt;WILL NOT&lt;/span&gt; receive any further emails from us at this email address: ##email##!&lt;/p&gt;&lt;/div&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;section id="sidebar"&gt;
+
+								&lt;h4&gt;Let us know how we can improve!&lt;/h4&gt;
+								&lt;p&gt;Take a moment and let us know how we can better serve you.&lt;/p&gt;
+								&lt;a href="##company_contact_link##" class="btn btn-large btn-primary btn-block"&gt;Contact us!&lt;/a&gt;
+
+
+								&lt;/section&gt;
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Flow />
+						<Events />
+					</ChildElement>
+				</ChildElements>
+				<ChildConnections>
+					<ChildConnection StartElementId="1" EndElementId="4" />
+					<ChildConnection StartElementId="1" EndElementId="2" />
+					<ChildConnection StartElementId="4" EndElementId="5" />
+					<ChildConnection StartElementId="4" EndElementId="6" />
+					<ChildConnection StartElementId="4" EndElementId="7" />
+					<ChildConnection StartElementId="2" EndElementId="5" />
+					<ChildConnection StartElementId="2" EndElementId="6" />
+					<ChildConnection StartElementId="2" EndElementId="7" />
+					<ChildConnection StartElementId="5" EndElementId="8" />
+					<ChildConnection StartElementId="6" EndElementId="9" />
+				</ChildConnections>
+			</CampaignElement>
+			<CampaignElement Id="6" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Appointment" Position="320,510" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<AdvancedFilter CriteriaJoinOperator="|">
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="appointment" />
+					</AdvancedFilter>
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Child Visit">
+					<Event EventId="30502" ElementId="6" ChildElementId="2" />
+					<Event EventId="30502" ElementId="6" ChildElementId="4" />
+				</HookedEvents>
+			</CampaignElement>
+			<CampaignElement Id="7" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Demo" Position="540,510" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<AdvancedFilter CriteriaJoinOperator="|">
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="demo" />
+					</AdvancedFilter>
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Child Visit">
+					<Event EventId="30502" ElementId="6" ChildElementId="2" />
+					<Event EventId="30502" ElementId="6" ChildElementId="4" />
+				</HookedEvents>
+			</CampaignElement>
+			<CampaignElement Id="8" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Not Sure" Position="760,510" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<AdvancedFilter CriteriaJoinOperator="|">
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-2" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
+						<AdvancedCriteria Criteria="Provided data in a Form" CriteriaId="4" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-1" InboundId="-6" InboundDetailId="-4" CriteriaOption="rsvp" Operator="Equal" Value="notsure" />
+					</AdvancedFilter>
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Child Visit">
+					<Event EventId="30502" ElementId="6" ChildElementId="2" />
+					<Event EventId="30502" ElementId="6" ChildElementId="4" />
+				</HookedEvents>
+			</CampaignElement>
+			<CampaignElement Id="9" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Unsubscribe" Position="1040,500" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<AdvancedFilter CriteriaJoinOperator="&amp;">
+						<AdvancedCriteria Criteria="Achieved a Goal" CriteriaId="1" From="1/1/10" To="1/1/20" ProgramId="-1" CampaignId="-1" OutboundId="-1" CriteriaOption="4" Operator="GreaterThan" Value="0" />
+					</AdvancedFilter>
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Child Visit">
+					<Event EventId="30500" ElementId="6" />
+				</HookedEvents>
+			</CampaignElement>
+			<CampaignElement Id="10" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Alert Email A" Position="170,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email_sales_rep##</ToAddress>
+							<FromName>Campaign ##event_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>##firstname## ##lastname## of ##company## requested a demo at ##event_name## campaign.</Subject>
+							<HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
+							<TextContent>Set up an appointment at ##event_name## with:
+								##firstname## ##lastname## of ##company##
+								Phone:##phone##
+								Cell:##mobile##
+								Email: ##email##
+								Appointment requested for: ##appointmentday##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="11" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email A" Position="320,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>##email_sales_rep_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Looking forward to seeing you, ##firstname##!</Subject>
+							<HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;I'll contact you within one business day to confirm our appointment at ##event_name##.&lt;p&gt;
+
+								&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
+
+								&lt;p&gt;##email_signature##&lt;p&gt;
+
+								&lt;p&gt;##company_address##&lt;/p&gt;
+
+								Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
+							<TextContent />
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="12" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email B" Position="460,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email_sales_rep##</ToAddress>
+							<FromName>Campaign ##event_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>##firstname## ##lastname## of ##company## requested a demo at ##event_name## campaign.</Subject>
+							<HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
+							<TextContent>Set up a demo prior to ##event_date## with:
+								##firstname## ##lastname## of ##company##
+								Phone:##phone##
+								Cell:##mobile##
+								Email: ##email##
+								Demo requested for:
+								Option 1: ##demodate1##
+								Option 2: ##demodate2##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="13" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email B" Position="610,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>##email_sales_rep_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Looking forward to meeting with you, ##firstname##!</Subject>
+							<HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;I'll contact you within one business day to confirm our online meeting.&lt;p&gt;
+
+								&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
+
+								&lt;p&gt;##email_signature##&lt;p&gt;
+
+								&lt;p&gt;##company_address##&lt;/p&gt;
+
+								Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
+							<TextContent />
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="14" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email C" Position="760,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email_sales_rep##</ToAddress>
+							<FromName>Campaign ##event_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>##firstname## ##lastname## of ##company## responded "Not Sure" to ##event_name## campaign.</Subject>
+							<HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
+							<TextContent>Follow up with:
+								##firstname## ##lastname## of ##company##
+								Phone:##phone##
+								Cell:##mobile##
+								Email: ##email##
+							</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="15" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email C" Position="900,660" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>##email_sales_rep_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Sorry we'll miss you, ##firstname##</Subject>
+							<HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;I'm sorry we'll miss you at ##event_name##. Be sure to take a moment and visit our special offer at: ##company_offer_link##. &lt;p&gt;
+
+								&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
+
+								&lt;p&gt;##email_signature##&lt;p&gt;
+
+								&lt;p&gt;##company_address##&lt;/p&gt;
+
+								Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="16" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Unsubscribe Email Alert" Position="1040,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email_sales_rep##</ToAddress>
+							<FromName>Campaign: ##event_name## </FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>##firstname## ##lastname## of ##company## unsubscribed at ##event_name## campaign.</Subject>
+							<HtmlContent>##ContactHistory ProgramId="17"  InboundIds="14" EventIds="30502,30505" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
+							<TextContent />
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="18" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS" Position="30,660" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<FromAccountCredential>&lt;UserCredentials&gt;
+								&lt;ShortCode&gt;&lt;/ShortCode&gt;
+								&lt;LongCode&gt;&lt;/LongCode&gt;
+								&lt;NickName&gt;FOXT&lt;/NickName&gt;
+								&lt;/UserCredentials&gt;</FromAccountCredential>
+							<To>1234567890</To>
+							<Content>Set up an appointment at ##event_name## with:
+								##firstname## ##lastname## of ##company##
+								Phone:##phone##
+								Cell:##mobile##
+								Email: ##email##
+								Appointment requested for: ##appointmentday##</Content>
+							<SmsAccount>3</SmsAccount>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+		</CampaignElements>
+		<CampaignConnections>
+			<CampaignConnection StartElementId="2" EndElementId="1" />
+			<CampaignConnection StartElementId="2" EndElementId="3" />
+			<CampaignConnection StartElementId="2" EndElementId="4" />
+			<CampaignConnection StartElementId="3" EndElementId="5" />
+			<CampaignConnection StartElementId="1" EndElementId="5" />
+			<CampaignConnection StartElementId="4" EndElementId="5" />
+			<CampaignConnection StartElementId="5" EndElementId="6" />
+			<CampaignConnection StartElementId="5" EndElementId="7" />
+			<CampaignConnection StartElementId="5" EndElementId="8" />
+			<CampaignConnection StartElementId="5" EndElementId="9" />
+			<CampaignConnection StartElementId="6" EndElementId="10" />
+			<CampaignConnection StartElementId="6" EndElementId="11" />
+			<CampaignConnection StartElementId="7" EndElementId="12" />
+			<CampaignConnection StartElementId="7" EndElementId="13" />
+			<CampaignConnection StartElementId="8" EndElementId="14" />
+			<CampaignConnection StartElementId="8" EndElementId="15" />
+			<CampaignConnection StartElementId="9" EndElementId="16" />
+			<CampaignConnection StartElementId="6" EndElementId="18" />
+		</CampaignConnections>
+	</Campaign>
+	<Campaign Name="Show Time" Version="1.0" Id="2" DbId="0" CheckOutId="0" State="Start" Permissions="">
+		<CampaignElements>
+			<CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="230,20" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Visit" />
+			</CampaignElement>
+			<CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 2" Position="170,260" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>Your name here</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Subject line here</Subject>
+							<HtmlContent />
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="3" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 1" Position="130,160" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>Your name here</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Subject line here</Subject>
+							<HtmlContent />
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="4" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Email Day 3" Position="200,360" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>Your name here</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Subject line here</Subject>
+							<HtmlContent />
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="5" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 1" Position="290,160" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<FromAccountCredential>&lt;UserCredentials&gt;
+								&lt;ShortCode&gt;&lt;/ShortCode&gt;
+								&lt;LongCode&gt;&lt;/LongCode&gt;
+								&lt;NickName&gt;FOXT&lt;/NickName&gt;
+								&lt;/UserCredentials&gt;</FromAccountCredential>
+							<To>##mobile##</To>
+							<Content>Hi ##firstname##, this is an SMS message.
+
+								Reply STOP to cancel, HELP for support.</Content>
+							<SmsAccount>3</SmsAccount>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="7" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 2" Position="320,260" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<FromAccountCredential>&lt;UserCredentials&gt;
+								&lt;ShortCode&gt;&lt;/ShortCode&gt;
+								&lt;LongCode&gt;&lt;/LongCode&gt;
+								&lt;NickName&gt;FOXT&lt;/NickName&gt;
+								&lt;/UserCredentials&gt;</FromAccountCredential>
+							<To>##mobile##</To>
+							<Content>Hi ##firstname##, this is an SMS message.
+
+								Reply STOP to cancel, HELP for support.</Content>
+							<SmsAccount>3</SmsAccount>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="8" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="SMS" Category="Outbound" Name="SMS Day 3" Position="340,360" SharedCheckout="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<FromAccountCredential>&lt;UserCredentials&gt;
+								&lt;ShortCode&gt;&lt;/ShortCode&gt;
+								&lt;LongCode&gt;&lt;/LongCode&gt;
+								&lt;NickName&gt;FOXT&lt;/NickName&gt;
+								&lt;/UserCredentials&gt;</FromAccountCredential>
+							<To>##mobile##</To>
+							<Content>Hi ##firstname##, this is an SMS message.
+
+								Reply STOP to cancel, HELP for support.</Content>
+							<SmsAccount>3</SmsAccount>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="9" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Microsite" Category="Inbound" Name="Microsite-Offer" Position="720,120" SharedCheckout="False" Permissions="">
+				<Schedules>
+					<Schedule DbId="0" Id="1" Status="Scheduled" Type="Fixed" TimeZone="Pacific Standard Time" EmailNotification="rzamani@mindfireinc.com">
+						<Subject>Microsite-Show Time (Right Now)</Subject>
+						<Body />
+						<Start DateTime="1/1/10 10:04 AM" />
+						<End DateTime="1/1/20 10:04 AM" />
+					</Schedule>
+				</Schedules>
+				<Events />
+				<CallbackTouchPoints>
+					<CallbackTouchPoint Id="1" DbId="0" Callback="http://demo.m.mdl.io/showtime" />
+				</CallbackTouchPoints>
+				<Properties>
+					<BaseUrlCollection>
+						<BaseUrl Id="1" DbId="0" URL="demo.m.mdl.io/showtime" Extension="showtime" Outbound_Id="0" Outbound_DbId="0" Parent_Id="0" PurlPosition="Prefix" Domain="demo.m.mdl.io" SSL="False" SearchEngineAllowed="False" />
+					</BaseUrlCollection>
+				</Properties>
+				<ChildElements>
+					<ChildElement Id="1" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="g2.html" Position="380,140">
+						<Properties PageType="AddContact" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Sign up for ##company_name## Special Offer at ##event_name##!&lt;/p&gt;
+
+								&lt;p&gt;Visit us at our booth ##booth_number##, or schedule an online meeting before ##event_date##, to take advantage of our Special Offer! This exceptional opportunity is available only before or during the ##event_name##. Sign up now find out more!&lt;/p&gt;
+
+								&lt;p&gt;&lt;center&gt;&lt;img src="http://dl.dropbox.com/u/2126295/boot/img/z-badge-1.png"&gt;&lt;/center&gt;&lt;p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
+
+								&lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
+
+								&lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
+
+								&lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
+
+								&lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
+
+								&lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
+
+								&lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
+								&lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
+								&lt;button type="button" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;Send&lt;/button&gt;
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
+								We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+
+
+
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="TextBox" Name="firstname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="lastname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="company">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="email">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="phone">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="mobile">
+								<IsRequired>False</IsRequired>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+						</Form>
+						<Flow>
+							<FlowNextElement Id="4" Name="pg2c.html">
+								<Filter CriteriaJoinOperator="&amp;" />
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="2" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="p2.html" Position="210,140">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Sign up for ##company_name## Special Offer at ##event_name##!&lt;/p&gt;
+
+								&lt;p&gt;Visit us at our booth ##booth_number##, or schedule an online meeting before ##event_date##, to take advantage of our Special Offer! This exceptional opportunity is available only before or during the ##event_name##. Sign up now find out more!&lt;/p&gt;
+
+								&lt;p&gt;&lt;center&gt;&lt;img src="http://dl.dropbox.com/u/2126295/boot/img/z-badge-1.png"&gt;&lt;/center&gt;&lt;p&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;form name="form1" method="post"&gt;
+								&lt;fieldset&gt;
+								&lt;legend&gt;Please fill out the form:&lt;/legend&gt;
+
+								&lt;label for="firstname"&gt;&lt;strong&gt;First Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="firstname" id="firstname" tabindex="10" placeholder="John"&gt;
+
+								&lt;label for="lastname"&gt;&lt;strong&gt;Last Name&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="lastname" id="lastname" tabindex="20" placeholder="Sample"&gt;
+
+								&lt;label for="company"&gt;&lt;strong&gt;Company&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="company" id="company" tabindex="30" placeholder="My Company"&gt;
+
+								&lt;label for="email"&gt;&lt;strong&gt;Email&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="email" id="email" tabindex="40" placeholder="email@mycompany.com"&gt;
+
+								&lt;label for="phone"&gt;&lt;strong&gt;Phone&lt;/strong&gt;*&lt;/label&gt;
+								&lt;input type="text" name="phone" id="phone" tabindex="50" placeholder="1234567890"&gt;
+
+								&lt;label for="mobile"&gt;&lt;strong&gt;Cell Phone &lt;/strong&gt;&lt;small&gt;(we'll send you reminder text messages)&lt;/small&gt;&lt;/label&gt;
+								&lt;input type="text" name="mobile" id="mobile" tabindex="50" placeholder="1234567890"&gt;&lt;br&gt;
+								&lt;button type="button" class="btn btn-primary btn-large btn-block" tabindex="100"&gt;Send&lt;/button&gt;
+								&lt;/fieldset&gt;
+
+								&lt;p class="pull-right"&gt;&lt;small&gt;&lt;i&gt;* Required field.&lt;/i&gt;&lt;br&gt;
+								We'll never spam you. Promise. Read our &lt;a href="##company_privacy_link##"&gt;Privacy Policy&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+								&lt;/form&gt;
+
+
+
+
+
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Form>
+							<Input Type="TextBox" Name="firstname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your first name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="lastname">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your last name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="company">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your company name!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="email">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your email address!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="phone">
+								<IsRequired>True</IsRequired>
+								<IsRequiredMessage>Please enter your phone number!</IsRequiredMessage>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+							<Input Type="TextBox" Name="mobile">
+								<IsRequired>False</IsRequired>
+								<ValidationRegex />
+								<ValidationRegexMessage />
+							</Input>
+						</Form>
+						<Flow>
+							<FlowNextElement Id="4" Name="pg2c.html">
+								<Filter CriteriaJoinOperator="&amp;" />
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="3" DbId="0" Type="Page" IsVersion="False" Name="index2.html" Position="293,18">
+						<Properties PageType="Page" IsHomePage="True" SkipPage="True" IsLoginRequired="False">
+							<HtmlContent />
+						</Properties>
+						<Flow DefaultNextChildName="g2.html" DefaultNextChildId="1">
+							<FlowNextElement Id="1" Name="g2.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<Criteria Row="1" Field="purl" Operator="Equal" Value="" />
+								</Filter>
+							</FlowNextElement>
+							<FlowNextElement Id="2" Name="p2.html">
+								<Filter CriteriaJoinOperator="&amp;">
+									<Criteria Row="1" Field="purl" Operator="NotEqual" Value="" />
+								</Filter>
+							</FlowNextElement>
+						</Flow>
+						<Events />
+					</ChildElement>
+					<ChildElement Id="4" RuleGroup="Content Variables" DbId="0" Type="Page" IsVersion="False" Name="pg2c.html" Position="300,280">
+						<Properties PageType="Page" IsHomePage="False" SkipPage="False" IsLoginRequired="False">
+							<HtmlContent>&lt;!DOCTYPE html&gt;
+								&lt;html&gt;
+								##page_head##
+								&lt;body&gt;
+								&lt;div class="container-fluid"&gt;
+
+								&lt;div class="page-header"&gt;
+								&lt;img class="" src="https://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo.jpg"&gt;
+								&lt;h5 class="pull-right"&gt;Call us: ##company_phone##&lt;/h5&gt;
+								&lt;/div&gt;&lt;!--/page-header--&gt;
+
+								&lt;div class="row-fluid"&gt;
+
+								&lt;div class="span8"&gt;
+								&lt;p class="lead"&gt;Thank you, ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;We'll contact you within one business day to review our Special Offer together!&lt;/p&gt;
+
+								&lt;!-- the following section will not appear on a phone--&gt;
+								&lt;section class="hidden-phone"&gt;
+								&lt;p class="hidden-phone"&gt; [The following section will NOT be visible on the cellphones] &lt;/p&gt;
+								&lt;p&gt;Watch this short overview video to learn more about our solution:&lt;/p&gt;
+								&lt;center&gt;&lt;iframe width="480" height="360" src="http://www.youtube.com/embed/UF8uR6Z6KLc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+								&lt;p&gt;[end of hidden-phone section]&lt;/p&gt;
+								&lt;/section&gt;&lt;!-- end hidden-phone section --&gt;
+
+								&lt;/div&gt;&lt;!--/main--&gt;
+
+								&lt;div class="well span4"&gt;
+								&lt;section id="sidebar"&gt;
+
+								&lt;h4&gt;Try ##company_offer##. For Free. Now!&lt;/h4&gt;
+								&lt;p&gt;Take a free test drive now and see what it's like.&lt;/p&gt;
+								&lt;a href="##company_offer_link##" class="btn btn-large btn-primary btn-block"&gt;Open a free trial account now!&lt;/a&gt;
+
+
+								&lt;/section&gt;
+								&lt;/div&gt;&lt;!--/sidebar--&gt;
+
+								&lt;/div&gt;&lt;!--/row-fluid--&gt;
+
+
+								##page_footer##
+								&lt;/body&gt;	 </HtmlContent>
+						</Properties>
+						<Flow />
+						<Events />
+					</ChildElement>
+				</ChildElements>
+				<ChildConnections>
+					<ChildConnection StartElementId="3" EndElementId="2" />
+					<ChildConnection StartElementId="3" EndElementId="1" />
+					<ChildConnection StartElementId="2" EndElementId="4" />
+					<ChildConnection StartElementId="1" EndElementId="4" />
+				</ChildConnections>
+			</CampaignElement>
+			<CampaignElement Id="11" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Interested in Offer" Position="720,230" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<AdvancedFilter CriteriaJoinOperator="&amp;">
+						<AdvancedCriteria Criteria="Performed an Event" CriteriaId="2" From="1/1/10" To="1/1/20" ProgramId="-1" InboundContext="All Visits" CampaignId="-2" InboundId="-12" CriteriaOption="30502" Operator="GreaterThan" Value="0" />
+					</AdvancedFilter>
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Visit">
+					<Event EventId="30502" ElementId="12" ChildElementId="1" />
+					<Event EventId="30502" ElementId="12" ChildElementId="2" />
+				</HookedEvents>
+			</CampaignElement>
+			<CampaignElement Id="10" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Lead Email Offer" Position="650,360" SharedCheckout="False" IsTrackingRequired="False" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email_sales_rep##</ToAddress>
+							<FromName>Campaign ##event_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>##firstname## ##lastname## of ##company## is interested in our Special Offer for ##event_name##</Subject>
+							<HtmlContent>##ContactHistory ProgramId="17"  InboundIds="15" EventIds="30502" Month="1" D="0" H="0" M="0" IncludeProfile="True" IncludeActivities="True" ShowCriteria="True"##</HtmlContent>
+							<TextContent>The following contact is interested in our Special Offer for ##event_name##:
+								##firstname## ##lastname## of ##company##
+								Phone:##phone##
+								Cell:##mobile##
+								Email: ##email##
+							</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+			<CampaignElement Id="12" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Confirmation Email Offer" Position="800,360" SharedCheckout="False" IsTrackingRequired="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>##email_sales_rep_name##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Thank you for your interest in ##company_name##</Subject>
+							<HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;I'll contact you within one business day to review our Special Offer for ##event_name##.&lt;p&gt;
+
+								&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
+
+								&lt;p&gt;##email_signature##&lt;p&gt;
+
+								&lt;p&gt;##company_address##&lt;/p&gt;
+
+								Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+		</CampaignElements>
+		<CampaignConnections>
+			<CampaignConnection StartElementId="1" EndElementId="2" />
+			<CampaignConnection StartElementId="1" EndElementId="3" />
+			<CampaignConnection StartElementId="1" EndElementId="4" />
+			<CampaignConnection StartElementId="1" EndElementId="5" />
+			<CampaignConnection StartElementId="1" EndElementId="7" />
+			<CampaignConnection StartElementId="1" EndElementId="8" />
+			<CampaignConnection StartElementId="9" EndElementId="11" />
+			<CampaignConnection StartElementId="11" EndElementId="10" />
+			<CampaignConnection StartElementId="11" EndElementId="12" />
+		</CampaignConnections>
+	</Campaign>
+	<Campaign Name="Post Show" Version="1.0" Id="3" DbId="0" CheckOutId="0" State="Start" Permissions="">
+		<CampaignElements>
+			<CampaignElement Id="1" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="ContactList" Category="TargetAudience" Name="Attendees" Position="400,100" SharedCheckout="False" Permissions="">
+				<Filter CriteriaJoinOperator="&amp;">
+					<Criteria Row="1" Field="email" Operator="Equal" Value="rzamani@mindfireinc.com" />
+				</Filter>
+				<HookedEvents TriggerFireContext="Current Visit" />
+			</CampaignElement>
+			<CampaignElement Id="2" DbId="0" CheckOutId="0" Version="1.0" State="Start" Type="Email" Category="Outbound" Name="Follow up Email" Position="400,250" SharedCheckout="False" RuleGroup="Content Variables" Permissions="">
+				<Events />
+				<Properties>
+					<Messages>
+						<Message Id="1">
+							<ToAddress>##email##</ToAddress>
+							<FromName>##email_sales_rep##</FromName>
+							<FromAddress>rzamani@mindfireinc.com</FromAddress>
+							<ReplyTo>rzamani@mindfireinc.com</ReplyTo>
+							<Subject>Thanks for your interest in ##company_name##!</Subject>
+							<HtmlContent>&lt;p&gt;Hi ##firstname##!&lt;/p&gt;
+
+								&lt;p&gt;Hope you've had a great time at ##event_name##. I wanted to follow up with you to make sure you don't miss out on our exceptional Speical Offer for this event.&lt;/P&gt;
+
+								&lt;p&gt;To learn more about ##company_offer## and see how you can take advantage of this incredible opportunity, &lt;a href="##company_brochure_link##"&gt;click here to download our new brochure&lt;/a&gt;!
+
+								&lt;p&gt;If you have any questions, please feel free to contact me at ##company_phone##.&lt;/p&gt;
+
+								&lt;p&gt;##email_signature##&lt;p&gt;
+
+								&lt;p&gt;##company_address##&lt;/p&gt;
+
+								Click here to unsubscribe: ##email_unsubscribe_link##</HtmlContent>
+							<TextContent>Hi ##firstname##, this is the text email.
+
+								Company's physical email address and unsubscribe link must be included for CAN-SPAM compliance.
+
+								COMPANY NAME | ADDRESS | CITY, STATE ZIP
+
+								To unsubscribe, visit http://##Unsubscribe RedirectURL="yourdomain.com"##</TextContent>
+						</Message>
+					</Messages>
+				</Properties>
+			</CampaignElement>
+		</CampaignElements>
+		<CampaignConnections>
+			<CampaignConnection StartElementId="1" EndElementId="2" />
+		</CampaignConnections>
+	</Campaign>
+	<RuleGroupSet>
+		<RuleGroup Name="Content Variables" Description="Use to update the content">
+			<ContentVariables>
+				<ContentVariable Name="email_preview_text">Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.</ContentVariable>
+				<ContentVariable Name="email_in_browser_link">http://#
+				</ContentVariable>
+				<ContentVariable Name="email_header">email_header: Use an attention grabbing headline!</ContentVariable>
+				<ContentVariable Name="email_content">email_content: The main body copy of the email goes here. Update with your awesome content. Use simple html tags to format the text, and add images or links as required.</ContentVariable>
+				<ContentVariable Name="email_unsubscribe_link">http://#</ContentVariable>
+				<ContentVariable Name="event_name">event_name: Sample Conference 2012</ContentVariable>
+				<ContentVariable Name="event_date">event_date: November 6-9</ContentVariable>
+				<ContentVariable Name="event_location">event_location: 123 Anystreet, Anytown, CA</ContentVariable>
+				<ContentVariable Name="event_booth">event_booth: Booth #123</ContentVariable>
+				<ContentVariable Name="company_name">company_name: Sample Co.</ContentVariable>
+				<ContentVariable Name="company_logo_link">http://dl.dropbox.com/u/2126295/Assets/tmplt/shim_logo300x75px.gif</ContentVariable>
+				<ContentVariable Name="company_copyright">company_copyright: &amp;copy; 2012 ##company_name##</ContentVariable>
+				<ContentVariable Name="company_address">company_address: 123 Any Street, Sample City, CA 92606</ContentVariable>
+				<ContentVariable Name="company_facebook_link">http://facebook.com</ContentVariable>
+				<ContentVariable Name="company_twitter_link">http://twitter.com</ContentVariable>
+				<ContentVariable Name="company_linkedin_link">http://linkedin.com</ContentVariable>
+				<ContentVariable Name="company_offer_link">http://#</ContentVariable>
+				<ContentVariable Name="company_phone">company_phone: 555-555-5555</ContentVariable>
+				<ContentVariable Name="company_offer">company_offer: Sample Offer</ContentVariable>
+				<ContentVariable Name="company_contact_link">http://#</ContentVariable>
+				<ContentVariable Name="page_head">&lt;head&gt;
+					&lt;meta charset="UTF-8"&gt;
+					&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+					&lt;title&gt;Come see us at ##event_name##&lt;/title&gt;
+					&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/bootstrap.min.css" rel="stylesheet" type="text/css"&gt;
+					&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"&gt;
+					&lt;link href="http://dl.dropbox.com/u/2126295/boot/css/mycss.css" rel="stylesheet" type="text/css"&gt;
+					&lt;!--[if IE]&gt;
+					&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+					&lt;![endif]--&gt;
+					&lt;/head&gt;</ContentVariable>
+				<ContentVariable Name="page_footer">&lt;footer class="clearfix"&gt;
+					&lt;hr&gt;
+					&lt;div class="row-fluid"&gt;
+					&lt;center&gt;&lt;small&gt;##company_copyright## | ##company_phone## | ##company_address##&lt;/small&gt;&lt;/center&gt;
+					&lt;/div&gt;
+					&lt;/footer&gt;
+					&lt;/div&gt;&lt;!--/container-fluid--&gt;
+					&lt;!--javascript codes--&gt;
+					&lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;
+					&lt;script src="http://dl.dropbox.com/u/2126295/boot/js/bootstrap.min.js"&gt;&lt;/script&gt;
+					&lt;script src="http://dl.dropbox.com/u/2126295/boot/js/myjs.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;!--/javascript codes--&gt;</ContentVariable>
+				<ContentVariable Name="email_font_face">Tahoma</ContentVariable>
+				<ContentVariable Name="company_privacy_link">http://#</ContentVariable>
+				<ContentVariable Name="email_signature">##email_sales_rep_name## &lt;br&gt;
+					##company_name## &lt;br&gt;
+					Phone: ##company_phone##&lt;br&gt;
+					Email: ##email_sales_rep##
+				</ContentVariable>
+				<ContentVariable Name="email_sales_rep">John@Sample.com</ContentVariable>
+				<ContentVariable Name="email_sales_rep_name">John Sample</ContentVariable>
+				<ContentVariable Name="company_brochure_link">http://#</ContentVariable>
+			</ContentVariables>
+		</RuleGroup>
+	</RuleGroupSet>
 </Program>
